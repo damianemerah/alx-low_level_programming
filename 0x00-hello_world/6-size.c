@@ -3,7 +3,7 @@
 /**
  * main - print the string in printf function
  *
- * Description: using the main function 
+ * Description: using the main function
  * this prigram prints the size of data type
  * Return: 0
  */
