@@ -9,11 +9,11 @@
  */
 void print_most_numbers(void)
 {
-	int c = '0';
+	int c = 48;
 
-	while (c <= '9')
+	while (c <= 57)
 	{
-		if (c != '2' && c != '4')
+		if (c != 50 && c != 52)
 		{
 			_putchar(c);
 		}
