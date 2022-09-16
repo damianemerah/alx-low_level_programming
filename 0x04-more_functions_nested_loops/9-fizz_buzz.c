@@ -9,23 +9,20 @@
 void fizz_buzz(void)
 {
 	int i = 1;
-	char f = 'Fizz';
-	char b = 'Buzz';
-	char fb = 'FizzBuzz';
 
 	while (i <= 100)
 	{
 		if (i % 3 == 0 && i % 5 == 0)
 		{
-			printf("%s ", fb);
+			printf("FizzBuzz ");
 		}
 		else if (i % 5 == 0)
 		{
-			printf("%s ", b);
+			printf("Buzz ");
 		}
 		else if (i % 3 == 0)
 		{
-			printf("%s ", f);
+			printf("Fizz ");
 		}
 		else
 		{
