@@ -3,7 +3,7 @@
 /**
  * fizz_buzz - Print number and words fizz buzz
  * Description: Replace multiples of 3 with fizz
- * multiples of 5 with buzz and multiple of 
+ * multiples of 5 with buzz and multiple of
  * 3 and 5 with fizzbuzz
  */
 void fizz_buzz(void)
@@ -30,5 +30,5 @@ void fizz_buzz(void)
 		}
 		i++;
 	}
+	_putchar('\n');
 }
-			
