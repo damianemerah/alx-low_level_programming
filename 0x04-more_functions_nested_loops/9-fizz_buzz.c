@@ -7,7 +7,7 @@
  * multiples of 5 with buzz and multiple of
  * 3 and 5 with fizzbuzz
  */
-void fizz_buzz(void)
+int fizz_buzz(void)
 {
 	int i = 1;
 
@@ -34,5 +34,6 @@ void fizz_buzz(void)
 		}
 		i++;
 	}
-	_putchar('\n');
+	printf(" ");
+	return (0);
 }
