@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -30,5 +31,5 @@ void fizz_buzz(void)
 		}
 		i++;
 	}
-	_putchar('\n');
+	putchar('\n');
 }
