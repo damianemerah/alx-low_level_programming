@@ -13,26 +13,26 @@ void fizz_buzz(void)
 
 	while (i <= 100)
 	{
-		if (i % 3 == 0 && i % 5 == 0)
+		if (i % 3 == 0 || i % 5 == 0)
 		{
-			printf("FizzBuzz ");
-		}
-		else if (i % 5 == 0)
-		{
-			printf("Buzz ");
-		}
-		else if (i % 3 == 0)
-		{
-			printf("Fizz ");
+			if (i % 3 == 0)
+			{
+				printf("Fizz");
+			}
+			if (i % 5 == 0)
+			{
+				printf("Buzz");
+			}
 		}
 		else
 		{
-			printf("%d ", i);
+			printf("%d", i);
 		}
 		if (i != 100)
 		{
-			_putchar('\n');
+			_putchar(' ');
 		}
 		i++;
 	}
+	_putchar('\n');
 }
