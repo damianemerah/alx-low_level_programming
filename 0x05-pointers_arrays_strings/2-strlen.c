@@ -3,11 +3,11 @@
 /**
  * _strlen - calculate string length
  * @s: String for check
- * Return: nothing
+ * Return: len as interger
  */
 int _strlen(char *s)
 {
-	int len;
+	int len = 0;
 
 	while (*(s + len) != '\0')
 	{
