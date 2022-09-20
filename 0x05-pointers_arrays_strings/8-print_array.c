@@ -5,6 +5,7 @@
  * print_array - Print elements of an array
  * @a: Array
  * @n: Number of array to be printed
+ * Return: Nothing
  */
 void print_array(int *a, int n)
 {
