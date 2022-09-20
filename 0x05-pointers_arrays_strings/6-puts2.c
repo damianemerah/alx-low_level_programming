@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * put2 - Print every second string
+ * puts2 - Print every second string
  * @str: string
  * Return: nothing
  */
