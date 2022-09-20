@@ -2,6 +2,7 @@
 
 /**
  * reset_to_98 - Reset input to 98
+ * @n: Interger to be modified
  * Return: nothing
  */
 
