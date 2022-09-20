@@ -3,6 +3,7 @@
 /**
  * put2 - Print every second string
  * @str: string
+ * Return: nothing
  */
 
 void puts2(char *str)
@@ -17,4 +18,5 @@ void puts2(char *str)
 		}
 		i++;
 	}
+	_putchar('\n');
 }
