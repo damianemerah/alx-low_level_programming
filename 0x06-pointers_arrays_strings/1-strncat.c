@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strcat - concatenates two strings
+ * _strncat - concatenates two strings
  * @dest: Destination
  * @src: source
  * @n: number of bytes from src
@@ -15,7 +15,8 @@ char *_strncat(char *dest, char *src, int n)
 		dest_len++;
 	for (index = 0; index < n; index++)
 	{
-		if (src[index]){
+		if (src[index])
+		{
 			dest[dest_len++] = src[index];
 		}
 	}
