@@ -5,7 +5,7 @@
  * of the substring needle in the string haystack.
  * The terminating null byte \0 are not compared
  *
- * @haystact: string where the search is made
+ * @haystack: string where the search is made
  * @needle: string whose occurence is searched in haystack
  *
  * Return: REturns a pointer to the begining of the located
