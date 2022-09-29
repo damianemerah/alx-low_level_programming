@@ -11,29 +11,23 @@ int _sqrt(int n);
 
 int _sqrt_recursion(int n)
 {
-	int x = 0;
-
-	if (n == 1 || n == 0)
+	if (n == 0 || n == 1)
 		return (n);
-	if (n < 0)
-		return (-1);
-	return (_sqrt(n, x));
+	return (_sqrt(0, n));
 }
 
 /**
  * _sqrt - function that return the root of a square
- * @n: Squared number
- * @x: root
+ * @n: test number
+ * @x: Squared number
  * Return: root of n
  */
 
 int _sqrt(int n, int x)
 {
-	int x = 0;
-
-	if (x > n / 2)
+	if (n > x / 2)
 		return (-1);
-	if (x * x == n)
-		return (x);
-	return (_sqrt(n, x + 1));
+	else if (n * n == x)
+		return (n);
+	return (_sqrt(n + 1, x));
 }
