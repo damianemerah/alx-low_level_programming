@@ -19,11 +19,10 @@ int _sqrt_recursion(int n)
 /**
  * _sqrt - function that return the root of a square
  * @n: Squared number
- * @x: root
  * Return: root of n
  */
 
-int _sqrt(int n, int x)
+int _sqrt(int n)
 {
 	int x = 0;
 
