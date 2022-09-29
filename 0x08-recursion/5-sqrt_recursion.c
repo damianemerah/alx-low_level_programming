@@ -21,7 +21,6 @@ int _sqrt_recursion(int n)
 /**
  * _sqrt - function that return the root of a square
  * @n: Squared number
- * @x: root
  * Return: root of n
  */
 
@@ -31,7 +30,7 @@ int _sqrt(int n)
 
 	if (x * x == n)
 		return (x);
-	if (x == n / 2)
+	if (x > n / 2)
 		return (-1);
 	return (_sqrt(x + 1));
 }
