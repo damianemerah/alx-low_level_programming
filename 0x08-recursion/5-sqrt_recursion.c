@@ -28,9 +28,9 @@ int _sqrt(int n)
 {
 	int x = 0;
 
-	if (x * x == n)
-		return (x);
 	if (x > n / 2)
 		return (-1);
+	if (x * x == n)
+		return (x);
 	return (_sqrt(x + 1));
 }
