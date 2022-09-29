@@ -7,7 +7,7 @@
  */
 int _sqrt_recursion(int n)
 {
-	_sqrt(n);
+	return(_sqrt(n));
 	_putchar('\n');
 }
 
