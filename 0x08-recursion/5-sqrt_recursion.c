@@ -11,8 +11,7 @@ int _sqrt(int n);
 
 int _sqrt_recursion(int n)
 {
-	return(_sqrt(n));
-	_putchar('\n');
+	return (_sqrt(n));
 }
 
 /**
@@ -20,6 +19,7 @@ int _sqrt_recursion(int n)
  * @n: Squared number
  * Return: root of n
  */
+
 int _sqrt(int n)
 {
 	int x = 0;
