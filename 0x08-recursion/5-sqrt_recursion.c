@@ -15,22 +15,21 @@ int _sqrt_recursion(int n)
 		return (n);
 	if (n < 0)
 		return (-1);
-	return (_sqrt(n));
+	return (_sqrt(n, 0));
 }
 
 /**
  * _sqrt - function that return the root of a square
  * @n: Squared number
+ * @x: root
  * Return: root of n
  */
 
-int _sqrt(int n)
+int _sqrt(int n, int x)
 {
-	int x = 0;
-
-	if (x > n / 2)
+	if (x == n / 2)
 		return (-1);
 	if (x * x == n)
 		return (x);
-	return (_sqrt(x + 1));
+	return (_sqrt(n, (x + 1)));
 }
