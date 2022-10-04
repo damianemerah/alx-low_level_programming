@@ -1,4 +1,4 @@
-#iclude "main.h"
+#include "main.h"
 
 /**
  * str_concat - A  function that concatenates two strings.
