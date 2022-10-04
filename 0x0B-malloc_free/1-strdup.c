@@ -15,7 +15,7 @@ char *_strdup(char *str)
 	int i, size;
 
 	size  = 0;
-	while (str[i] != '\0')
+	while (str[size] != '\0')
 	{
 		size++;
 	}
@@ -27,7 +27,7 @@ char *_strdup(char *str)
 	if (array == 0)
 		return (NULL);
 
-	for (i = 0; i < sizeof(str); i++)
+	for (i = 0; i < size; i++)
 		array[i] = str[i];
 
 	array[size] = '\0';
