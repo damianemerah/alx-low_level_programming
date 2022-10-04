@@ -20,11 +20,8 @@ char *str_concat(char *s1, char *s2)
 
 	while (s1[index] != '\0')
 		size++;
-	index = 0;
 	while (s2[index] != '\0')
 		size++;
-	index = 0;
-	size++;
 	conc_str = malloc(sizeof(char) * size)
 		if (conc_str == NULL)
 			return (NULL);
