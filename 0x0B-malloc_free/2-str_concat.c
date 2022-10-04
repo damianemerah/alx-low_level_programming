@@ -10,8 +10,7 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *conc_str;
-	int size = 0;
-	int index = 0;
+	int index, size = 0, conc_index = 0;
 
 	if (s1 == NULL)
 		s2 = "";
@@ -25,8 +24,8 @@ char *str_concat(char *s1, char *s2)
 	if (conc_str == NULL)
 		return (NULL);
 	for (index = 0; s1[index]; index++)
-		conc_str[index] = s1[index];
+		conc_str[conc_index] = s1[index];
 	for (index = 0; s2[index]; index++)
-		conc_str[index++] = s2[index];
+		conc_str[conc_index++] = s2[index];
 	return (conc_str);
 }
