@@ -10,7 +10,7 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *conc_str;
-	int l1, l2, index, size = 0, conc_index = 0;
+	int l1, l2, i, j, index, size = 0, conc_index = 0;
 
 	if (s1 == NULL)
 		s2 = "";
@@ -31,11 +31,19 @@ char *str_concat(char *s1, char *s2)
 	if (conc_str == NULL)
 		return (NULL);
 
-	for (index = 0; index < l1; index++)
-		conc_str[conc_index++] = s1[index];
+	while (conc_index < l1)
+	{
+		conc_str[conc_index] = s1[conc_index];
+		conc_index++;
+	}
 
-	for (index = 0; index <= size; index++)
-		conc_str[conc_index++] = s2[index];
+
+	i = 0;
+	whiel (i <= size)
+	{
+		conc_str[i] = s2[conc_index++];
+		i++;
+	}
 
 	return (conc_str);
 }
