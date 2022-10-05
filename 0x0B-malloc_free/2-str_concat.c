@@ -32,10 +32,10 @@ char *str_concat(char *s1, char *s2)
 	if (conc_str == 0)
 		return (NULL);
 
-	for (index = 0; s1[index]; index++)
+	for (index = 0; index < l1; index++)
 		conc_str[conc_index++] = s1[index];
 
-	for (index = 0; s2[index]; index++)
+	for (index = 0; index <= size; index++)
 		conc_str[conc_index++] = s2[index];
 
 	return (conc_str);
