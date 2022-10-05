@@ -3,7 +3,7 @@
 
 /**
  * main - adds positive numbers
- * @args: number of arguments
+ * @argc: number of arguments
  * @argv: array of arguments
  * Return: 0 on success, 1 on failure
  */
