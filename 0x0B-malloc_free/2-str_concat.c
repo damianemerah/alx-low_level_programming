@@ -20,12 +20,16 @@ char *str_concat(char *s1, char *s2)
 	for (index = 0; s1[index] || s2[index]; index++)
 		size++;
 
-	conc_str = malloc(sizeof(char) * (size + 1));
-	if (conc_str == NULL)
+	conc_str = malloc(sizeof(char) * size);
+
+	if (conc_str == 0)
 		return (NULL);
+
 	for (index = 0; s1[index]; index++)
 		conc_str[conc_index] = s1[index];
+
 	for (index = 0; s2[index]; index++)
 		conc_str[conc_index++] = s2[index];
+
 	return (conc_str);
 }
