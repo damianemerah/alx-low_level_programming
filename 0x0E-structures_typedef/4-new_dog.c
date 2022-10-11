@@ -6,7 +6,6 @@
  * @str: string to be counted
  *
  * Return: returns length of string
- *
  */
 
 int _strlen(char *str)
@@ -18,6 +17,7 @@ int _strlen(char *str)
 
 	return (len);
 }
+
 
 /**
  * _strcopy - copy string pointed by src
@@ -40,6 +40,7 @@ char *_strcopy(char *dest, char *src)
 
 	return (dest);
 }
+
 
 /**
  * new_dog - creates a new dog
