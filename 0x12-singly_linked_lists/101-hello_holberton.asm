@@ -11,5 +11,5 @@ main:
 	mov eax, 0
 	call printf
 
-	mov ea, 0
+	mov eax, 0
 	ret
