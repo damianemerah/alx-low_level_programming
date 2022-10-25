@@ -1,4 +1,4 @@
-i#include "lists.h"
+#include "lists.h"
 
 /**
  * get_nodeint_at_index -  a function that returns the nth node
