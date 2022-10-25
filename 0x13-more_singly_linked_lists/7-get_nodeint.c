@@ -14,11 +14,11 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
 	size_t node;
 
-	for (node = 0; node < index; node++)
+	for (node = 0; (node < index) && (head->next); node++)
 	{
-		if (node == NULL)
-			return (NULL);
 		head = head->next;
+		if (node < index)
+			return (NULL);
 	}
 	return (head);
 }
