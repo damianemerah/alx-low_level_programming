@@ -4,7 +4,7 @@
  * listint_len - Returns the number of elements
  * linked to listint_t list
  *
- * @n: A pointer to the head of the listint_t list
+ * @h: A pointer to the head of the listint_t list
  * Return: the number of element in listint_t list
  */
 
