@@ -14,7 +14,7 @@
 unsigned int binary_to_uint(const char *b)
 {
 	int len, base_two;
-	unsigned int dac_val;
+	unsigned int dec_val;
 
 	if (!b)
 		return (0);
