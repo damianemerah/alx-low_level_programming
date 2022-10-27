@@ -1,9 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-#include <stdio.h>
-#include <stdlib.h>
-
 int _putchar(char);
 void print_binary(unsigned long int n);
 void print_binary(unsigned long int n);
