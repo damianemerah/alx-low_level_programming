@@ -12,28 +12,16 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int decimal = 0;
-	int multiplicador = 1, index = 0;
+	int i;
+	unsigned int dec_val = 0;
 
-	if (b == NULL)
+	if (!b)
 		return (0);
-	for (index = 0; b[index] != '\0'; index++)
+	for (i = 0; b[i]; i++)
 	{
-		if (b[index] != '0' && b[index] != '1')
+		if (b[i] < '0' || b[i] > '1')
 			return (0);
+		dec_val = 2 * dec_val + (b[i] - '0');
 	}
-	for (index = index - 1; index >= 0; index--)
-	{
-		char currentCharacter;
-
-		currentCharacter = b[index];
-		if (currentCharacter == '1')
-		{
-			decimal += multiplicador;
-		}
-		multiplicador = multiplicador * 2;
-		if (index == 0)
-			break;
-	}
-	return (decimal);
+	return (dec_val);
 }
