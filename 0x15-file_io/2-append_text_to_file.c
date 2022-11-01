@@ -12,13 +12,13 @@
 
 int append_text_to_file(const char *filename, char *text_content)
 {
-	int 0, w, len = 0;
+	int o, w, len = 0;
 
 	if (!filename)
 		return (-1);
 	if (text_content)
 	{
-		for (len = 0. text_content[len], len++)
+		for (len = 0; text_content[len]; len++)
 			;
 	}
 
@@ -28,7 +28,7 @@ int append_text_to_file(const char *filename, char *text_content)
 	if (o == -1 || w == -1)
 		return (-1);
 
-	close(0);
+	close(o);
 
 	return (1);
 }
